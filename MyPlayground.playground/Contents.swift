@@ -6,12 +6,9 @@ func punkt_1(a: Double, b: Double, c: Double) -> [Double]? {//решение к�
 
     switch dscr{
     case 0:
-        let x_1 = -b / 2 * a
-        return [x_1]
+        return [-b / 2 * a]
     case 0...:
-        let x_1 = -b - sqrt(dscr) / 2 * a
-        let x_2 = -b + sqrt(dscr) / 2 * a
-        return [x_1, x_2]
+        return [-b - sqrt(dscr) / 2 * a, -b + sqrt(dscr) / 2 * a]
     default:
         return nil
     }
@@ -33,20 +30,23 @@ func punct_2(a: Double, b: Double, c: Double, d: Double) -> [Double]? {//реш�
         return [-1]
     } else {
         print("too much slozhno for this week")
+        return nil
     }
-    
-    return [0]
+   
 }
 
 func find_div(n: Int) -> [Int]{//поиск делителя, мог пригодится, для решения кубического уравнения
-    if n/2 == 0 {
+    
+    switch n/2{
+    case 0:
         var dividers = punct_4(n: n)
         dividers.remove(at: 1)
         return dividers
-    } else {
+    default:
         let dividers = punct_4(n: n)
         return dividers
     }
+   
 }
 
 
