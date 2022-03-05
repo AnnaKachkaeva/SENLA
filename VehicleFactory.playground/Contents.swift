@@ -8,8 +8,8 @@ enum Engines{
 }
 
 class Factory{
-    let factoryName: String
-    var cars: [Vehicle] = []
+    private let factoryName: String
+    private(set) var cars: [Vehicle] = []
     var amountoOfVehicle: Int {get{cars.count}}
     
     init(factoryName: String) {
@@ -73,7 +73,7 @@ final class Telega: Transport{
         super.showInfo()
     }
     
-    func cargoTranspotation(){
+    private func cargoTranspotation(){
         print("🚛 -_-_- transproted something someware -_-_-  🏚")
     }
     
@@ -81,27 +81,27 @@ final class Telega: Transport{
 
 
 
-class Parovoz: Transport {
+final class Parovoz: Transport {
     
     override func showInfo(){
         print("\nHi I am Parovoz 🚂")
         super.showInfo()
     }
     
-    func voiceSignal(){
+    private func voiceSignal(){
         print("🚂 💨_ tu_ _tu _ _ _tuuuu_ _ _ _ _ _ _ _ _ _ _ _")
     }
     
 }
 
-class Stupa: Transport {
+final class Stupa: Transport {
     
     override func showInfo(){
         print("\nHi I am Stupa 🏺")
         super.showInfo()
     }
     
-    func fearCitizens(){
+    private func fearCitizens(){
         "____😩__😱__😩__😩_🙀__😨__😩__😩____"
     }
     
