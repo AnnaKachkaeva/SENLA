@@ -1,4 +1,4 @@
-struct DonkeyCar: Car{
+struct DonkeyCar: Car, SureDonkeyCar{
     var assemblyFactory: String
     var tires: Tires
     var engine: Engines
@@ -24,7 +24,7 @@ struct DonkeyCar: Car{
     }
 }
 
-struct CosmoCar: Car{
+struct CosmoCar: Car, SuperCosmoCar{
     var assemblyFactory: String
     var tires: Tires
     var engine: Engines
@@ -51,7 +51,7 @@ struct CosmoCar: Car{
     }
 }
 
-struct Bus: Car{
+struct Bus: Car, SuperBus {
     var assemblyFactory: String
     var tires: Tires
     var engine: Engines
@@ -83,3 +83,5 @@ struct Bus: Car{
         }
     }
 }
+
+

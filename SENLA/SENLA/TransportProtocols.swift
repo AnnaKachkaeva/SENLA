@@ -26,6 +26,20 @@ extension Car{
     }
 }
 
+protocol SureDonkeyCar{
+    mutating func superFunction() -> Void
+}
+
+protocol SuperCosmoCar{
+    var timeMultiplier: Int { get set }
+    mutating func superFunction() -> Void
+}
+
+protocol SuperBus{
+    var isSteeringWheelRight: Bool { get set }
+    mutating func superFunction() -> Void
+}
+
 // MARK: NESTED TYPES
 enum Colors: String{
     case red = "🔴"
