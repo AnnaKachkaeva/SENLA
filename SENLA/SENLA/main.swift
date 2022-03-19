@@ -1,16 +1,11 @@
 
 
-let factory = Factory(factoryName: "BEST_FACTORY")
+let dealer = Dealer(name: "BEST_DEALER")
 
-let car1 = factory.createVehicle(engineType: .donkey)
-let car2 = factory.createVehicle(engineType: .oilEngine)
-let car3 = factory.createVehicle(engineType: .solarEngine)
+let factory = Factory(dealerDelegate: dealer)
 
-print(factory.sellVehicle(vehicle: car2))
-print(factory.sellVehicle(vehicle: car2))
+factory.createVehicle(engineType: .solarEngine)
+factory.createVehicle(engineType: .donkey)
 
-
-
-
-
+factory.sellVehicle()
 

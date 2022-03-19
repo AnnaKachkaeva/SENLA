@@ -1,23 +1,24 @@
-class Dealer{
+protocol CarDealer{
+    var vehicles: [Car] { get set }
+    func sellVehicle(vehicle: Car?) -> Car?
+}
+
+
+class Dealer: CarDealer{
     let name: String
-    var vehicles: [Cars]
+    var vehicles: [Car]
     
     init(name: String){
         self.name = name
         vehicles = []
     }
-    
-    func byVehicles(vehicles: [Cars]){
-        self.vehicles.append(contentsOf: vehicles)
-    }
-    
-    func sellVehicle(vehicle: Cars) -> Cars?{
-        if let index = vehicles.firstIndex(where: {$0.engine == vehicle.engine}) {
-            print("we've got the vehicle")
-            return vehicles.remove(at: index)
-        } else {
-            print("sorry^ we can't help you")
+
+    func sellVehicle(vehicle: Car?) -> Car?{
+        guard let car = vehicle else {
+            print("no more cars")
             return nil
         }
+        print("here is your car \(car)")
+        return car
     }
 }

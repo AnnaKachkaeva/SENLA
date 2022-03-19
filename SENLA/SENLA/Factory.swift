@@ -1,22 +1,24 @@
 import Foundation
 
 class Factory{
-    private let factoryName: String
-    private(set) var cars: [Cars] = []
+    private(set) var factoryName = "BEST_FACTORY"
+    private(set) var cars: [Car] = []
     var amountoOfVehicle: Int {get{cars.count}}
     
-    let dealerDelegate = Dealer(name: "Best_Dealer")
+    let dealerDelegate: CarDealer  //= Dealer(name: "Best_Dealer")
     
-    init(factoryName: String) {
-        self.factoryName = factoryName
+    init(dealerDelegate: CarDealer){
+        self.dealerDelegate = dealerDelegate
     }
     
-    func sellVehicle(vehicle: Cars) -> Cars? {
-        dealerDelegate.sellVehicle(vehicle: vehicle)
+    
+    func sellVehicle() -> Car? {
+        dealerDelegate.sellVehicle(vehicle: cars.popLast())
     }
     
-    func createVehicle(engineType: Engines) -> Cars{
-        var car: Cars
+    @discardableResult
+    func createVehicle(engineType: Engines) -> Car{
+        var car: Car
         switch engineType{
         case .donkey:
             car = DonkeyCar(assemblyFactory: factoryName)

@@ -10,7 +10,6 @@
 		954D7E2D27DB679F00CB124E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D7E2C27DB679F00CB124E /* main.swift */; };
 		954D7E3427DBA53600CB124E /* transportStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D7E3327DBA53600CB124E /* transportStructs.swift */; };
 		954D7E3627DBA55400CB124E /* TransportProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D7E3527DBA55400CB124E /* TransportProtocols.swift */; };
-		954D7E3827DBA5CE00CB124E /* OldTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D7E3727DBA5CE00CB124E /* OldTransport.swift */; };
 		954D7E3A27DBA5F400CB124E /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D7E3927DBA5F400CB124E /* Factory.swift */; };
 		954D7E3C27DBA61000CB124E /* Dealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D7E3B27DBA61000CB124E /* Dealer.swift */; };
 /* End PBXBuildFile section */
@@ -32,7 +31,6 @@
 		954D7E2C27DB679F00CB124E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		954D7E3327DBA53600CB124E /* transportStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transportStructs.swift; sourceTree = "<group>"; };
 		954D7E3527DBA55400CB124E /* TransportProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportProtocols.swift; sourceTree = "<group>"; };
-		954D7E3727DBA5CE00CB124E /* OldTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldTransport.swift; sourceTree = "<group>"; };
 		954D7E3927DBA5F400CB124E /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		954D7E3B27DBA61000CB124E /* Dealer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dealer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,7 +69,6 @@
 				954D7E3927DBA5F400CB124E /* Factory.swift */,
 				954D7E3327DBA53600CB124E /* transportStructs.swift */,
 				954D7E3527DBA55400CB124E /* TransportProtocols.swift */,
-				954D7E3727DBA5CE00CB124E /* OldTransport.swift */,
 				954D7E3B27DBA61000CB124E /* Dealer.swift */,
 			);
 			path = SENLA;
@@ -136,7 +133,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				954D7E3627DBA55400CB124E /* TransportProtocols.swift in Sources */,
-				954D7E3827DBA5CE00CB124E /* OldTransport.swift in Sources */,
 				954D7E3C27DBA61000CB124E /* Dealer.swift in Sources */,
 				954D7E3427DBA53600CB124E /* transportStructs.swift in Sources */,
 				954D7E2D27DB679F00CB124E /* main.swift in Sources */,
